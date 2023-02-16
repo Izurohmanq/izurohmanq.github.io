@@ -43,14 +43,13 @@ body {
 /* ---------------------------------------------- contact */
 .container-tengah-contact {
   width: 690px;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 20px auto 9.4em auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.4);
   padding: 7px 0 5px 0;
   border-radius: 10px;
 }
@@ -59,7 +58,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 20px;
 }
 
 .container-tengah-contact button {
