@@ -230,6 +230,15 @@ textarea {
 /* ------------------------------------------------------------------------------------------ */
 /* responsive */
 
+@media screen and (max-width: 321px) {
+  .container-tengah-contact {
+    padding-top: 90px;
+  }
+  .navbar .navbar-bawah span a lord-icon {
+    width: 5px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   /* home */
   .container-tengah {

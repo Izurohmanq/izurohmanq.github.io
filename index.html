@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <section id="techStack">
+    <section id="techStack" class="techStack">
       <div class="tech">
         <p><i>Tech stack</i> yang kadang saya gunakan:</p>
         <div class="techImg">
@@ -79,7 +79,7 @@
     </section>
 
     <!-- hayooooo lagi nge-inspect yaaa -->
-    <div id="task" class="container-task">
+    <div id="task" class="task container-task">
       <h1 align="center" class="pt-5">Project&Blog</h1>
       <div class="container text-center">
         <!-- card 1 -->
@@ -124,7 +124,7 @@
       </div>
     </div>
 
-    <div id="contact" class="container-tengah-contact">
+    <div id="contact" class="contact container-tengah-contact">
       <h3 class="mb-3">taruh di sini saja, <i>gan</i></h3>
       <form action="https://formsubmit.co/ctov12lod@gmail.com" method="POST">
         <input
@@ -215,44 +215,5 @@
         </span>
       </nav>
     </div>
-    <script>
-      var satu = document.getElementById("about");
-      var dua = document.getElementById("techStack");
-      var tiga = document.getElementById("task");
-      var empat = document.getElementById("contact");
-
-      loop("about");
-      loop("techStack");
-      loop("task");
-      loop("contact");
-
-      // function Loop through all parallax elements
-      function loop(param) {
-        var parameter = document.getElementById(param);
-        parameter.forEach(function (parallaxElement) {
-          // Get the position of the element
-          var parallaxPosition = parallaxElement.getBoundingClientRect().top;
-
-          // Check if the element is in view when the page is loaded
-          checkParallax(parallaxElement, parallaxPosition);
-
-          // Listen for scroll events
-          window.addEventListener("scroll", function () {
-            checkParallax(parallaxElement, parallaxPosition);
-          });
-        });
-      }
-
-      function checkParallax(parallaxElement, parallaxPosition) {
-        // Get the current scroll position
-        var scrollPosition = window.pageYOffset;
-
-        // Check if the parallax element is in view
-        if (scrollPosition >= parallaxPosition - window.innerHeight) {
-          // Add the "show" class to fade in the element
-          parallaxElement.classList.add("muncul");
-        }
-      }
-    </script>
   </body>
 </html>
